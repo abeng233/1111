@@ -1,0 +1,48 @@
+{
+    "version": "7.2.7",
+    "description": "Cross-platform automation and configuration tool/framework, known as Powershell Core, that works well with existing tools and is optimized for dealing with structured data.",
+    "homepage": "https://github.com/PowerShell/PowerShell",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.2.7/PowerShell-7.2.7-win-x64.zip",
+            "hash": "4686202e22ec153f4fef0b4d7fb2d577a6b0cd4d448b598e151417d095bc8fad"
+        },
+        "32bit": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.2.7/PowerShell-7.2.7-win-x86.zip",
+            "hash": "c82c042e05ba7fc66dd84d43fa46b33131acfc7028b8af724ac149171d2d24b5"
+        }
+    },
+    "pre_install": [
+        "'Microsoft.PowerShell_profile.ps1', 'profile.ps1' | ForEach-Object {",
+        "    if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null }",
+        "}"
+    ],
+    "bin": "pwsh.exe",
+    "shortcuts": [
+        [
+            "pwsh.exe",
+            "PowerShell Core",
+            "-WorkingDirectory ~"
+        ]
+    ],
+    "persist": [
+        "Microsoft.PowerShell_profile.ps1",
+        "profile.ps1"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PowerShell/PowerShell/releases/download/v$version/PowerShell-$version-win-x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/PowerShell/PowerShell/releases/download/v$version/PowerShell-$version-win-x86.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/tag/v$version/",
+            "regex": "$basename\\s*<ul>\\s*<li>$sha256"
+        }
+    }
+}
