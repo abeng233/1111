@@ -1,12 +1,12 @@
 {
-    "version": "1.8.3",
+    "version": "1.8.4",
     "description": "开发者边车，github打不开，github加速，git clone加速，git release下载加速，stackoverflow加速",
     "homepage": "https://github.com/docmirror/dev-sidecar",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://ghproxy.com/https://github.com/docmirror/dev-sidecar/releases/download/v1.8.3/DevSidecar-1.8.3.exe#/dl.7z",
-            "hash": "9487c66d66ebae18008ba8ba64c9435d91776ae5bc7e15dfc152e8caf7dac4ec",
+            "url": "https://ghproxy.com/https://github.com/docmirror/dev-sidecar/releases/download/v1.8.4/DevSidecar-1.8.4.exe#/dl.7z",
+            "hash": "8506fdd306e5cb40f2c613db0e776ae8494bd7ef25a981173277244a8ca22703",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
