@@ -1,10 +1,10 @@
 {
-    "version": "4.1.0",
+    "version": "4.1.1",
     "description": "A version manager for neovim",
     "homepage": "https://github.com/MordechaiHadad/bob",
     "license": "Freeware",
-    "url": "https://github.com/MordechaiHadad/bob/releases/download/v4.1.0/bob-windows-x86_64.zip",
-    "hash": "9ee24728500d41ccb8772f2fe79f06566f85cef8e4a0b3ae71305614ff1df310",
+    "url": "https://github.com/MordechaiHadad/bob/releases/download/v4.1.1/bob-windows-x86_64.zip",
+    "hash": "eceec21a2d6769ce96713020b92693172953a3e47f3f38a00141007d52b4864a",
     "bin": "bob.exe",
     "checkver": "github",
     "autoupdate": {
