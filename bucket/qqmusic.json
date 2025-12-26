@@ -1,11 +1,11 @@
 {
-    "version": "20.45.0",
+    "version": "22.0.1",
     "description": "The official QQ Music client.",
     "homepage": "https://y.qq.com/",
     "license": "Freeware",
     "notes": "We don't persist your QQMusic data, they are still storaged in '%LOCALAPPDATA%\\Tencent\\QQMusic'.",
     "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/dl.7z",
-    "hash": "5bca95356aa6cb69fe912781602731cc644261b577b0c7d25782247b3652f233",
+    "hash": "9d864fe4654e60821bd39341085bce44116b2864861589f7f5c010cb627ae1bb",
     "shortcuts": [
         [
             "QQMusic.exe",
