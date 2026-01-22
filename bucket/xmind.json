@@ -1,11 +1,11 @@
 {
-    "version": "2025",
+    "version": "2026",
     "homepage": "https://www.xmind.net/",
     "license": "shareware",
     "architecture": {
         "64bit": {
             "url": "https://www.xmind.net/zen/download/win64/#/dl.7z",
-            "hash": "5ea111b7cdcb5f72bbe376c3f2979d0cf8d7c5736d6dcce35f365bf622bb0da3",
+            "hash": "c270c7fb22cca3031dd7dfe1d52d07689c7a958432001506eed4cad457a972e2",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
